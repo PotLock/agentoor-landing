@@ -1,0 +1,17 @@
+{
+    "redirects": [
+
+      {
+        "source": "/figma",
+        "destination": "https://www.figma.com/design/qX7N1kJbOrJ6o1rtoHPFkR/Agentoor",
+        "permanent": true
+      },
+      {
+        "source": "/notion",
+        "destination": "https://www.notion.so/potlock/Agentoor-84ff35a946d448c68330b5a95112e88e",
+        "permanent": true
+      }
+  
+    ]
+  }
+  
