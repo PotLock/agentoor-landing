@@ -1,19 +1,14 @@
-import React, { useState } from "react";
-import type { NextPage } from "next";
+"use client";
 
-export type DropdownHeaderNavigationType = {
-  className?: string;
-};
+import { useState } from "react";
 
-const DropdownHeaderNavigation: NextPage<DropdownHeaderNavigationType> = ({
-  className = "",
-}) => {
+const DropdownHeaderNavigation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
       <header
-        className={`self-stretch bg-base-base-white border-whitesmoke border-b-[1px] border-solid box-border flex flex-row items-start justify-start pt-[0rem] px-[7.5rem] pb-[2rem] top-[0] z-[99] sticky max-w-full text-left text-[1.313rem] text-base-base-black font-sf-pro-text ${className}`}
+        className={`self-stretch bg-base-base-white border-whitesmoke border-b-[1px] border-solid box-border flex flex-row items-start justify-start pt-[0rem] px-[7.5rem] pb-[2rem] top-[0] z-[99] sticky max-w-full text-left text-[1.313rem] text-base-base-black font-sf-pro-text`}
       >
         <div className="flex-1 flex flex-row items-start justify-between py-[1.125rem] px-[2rem] box-border max-w-full gap-[1.25rem]">
           <div className="h-[2.375rem] w-[38.438rem] flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[0rem] box-border max-w-full">
@@ -66,10 +61,10 @@ const DropdownHeaderNavigation: NextPage<DropdownHeaderNavigationType> = ({
               frameBorder="0"
               scrolling="no"
               style={{
-                borderRadius: '4px',
-                border: '2px solid #e5e7eb',
-                margin: '0',
-                backgroundColor: 'transparent',
+                borderRadius: "4px",
+                border: "2px solid #e5e7eb",
+                margin: "0",
+                backgroundColor: "transparent",
               }}
             />
           </div>
