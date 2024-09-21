@@ -91,19 +91,17 @@ const Page = () => {
         />
       </main>
 
-      <footer className="w-full py-[1rem] px-[1.25rem] text-center text-[1rem] text-neutral-neutral-600 font-text-md-regular bg-white z-30">
-        <div className="relative leading-[1.5rem]">
-          © 2024 by{" "}
-          <a
-            href="https://potluck.software"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline text-neutral-neutral-600 hover:text-neutral-neutral-600"
-          >
-            Potluck Labs Inc.
-          </a>{" "}
-          All rights reserved.
-        </div>
+      <footer className="w-full py-4 leading-[1.5rem] box-border overflow-hidden px-5 text-center text-xs sm:text-base text-neutral-neutral-600 font-text-md-regular bg-white z-30">
+        © 2024 by{" "}
+        <a
+          href="https://potluck.software"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline text-neutral-neutral-600 hover:text-neutral-neutral-600"
+        >
+          Potluck Labs Inc.
+        </a>{" "}
+        All rights reserved.
       </footer>
 
       {isModalOpen && (
