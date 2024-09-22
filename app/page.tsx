@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Waitlist from "./components/Waitlist";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,60 +35,77 @@ const Page = () => {
       </header>
 
       <main className="flex-grow flex items-center justify-center relative">
-        <img
+        <motion.img
+          initial={{
+            opacity: 0,
+            transform: "translateX(10rem)",
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateX(0rem)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "linear",
+          }}
           className="w-[42.725rem] h-[36.506rem] absolute top-[-4.062rem] right-[-26.537rem] object-contain z-10"
-          alt=""
+          alt="bg"
           src="/agentblock@2x.png"
         />
-        <img
+        <motion.img
+          initial={{
+            opacity: 0,
+            transform: "translateX(-10rem)",
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateX(0rem)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "linear",
+          }}
           className="w-[40.081rem] h-[31.263rem] absolute top-[6.581rem] left-[-24.956rem] object-contain z-10"
           loading="lazy"
-          alt=""
+          alt="bg"
           src="/functionality@2x.png"
         />
-        <img
+        <motion.img
+          initial={{
+            opacity: 0,
+            transform: "translateY(10rem)",
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateY(0rem)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "linear",
+          }}
           className="w-[20.919rem] h-[27.244rem] absolute right-[-7.606rem] bottom-[-8.869rem] rounded-lg overflow-hidden shrink-0 object-contain z-10"
           loading="lazy"
-          alt=""
+          alt="bg"
           src="/integrations@2x.png"
         />
-        <section className="container flex justify-center bg-white z-20">
-          <div className="w-full max-w-[49.875rem]  ">
-            <h1 className="text-4xl sm:text-[3.5rem] leading-[120%] font-bold text-center mb-[2.5rem] text-transparent !bg-clip-text [background:linear-gradient(180deg,_#6f6f6f,_#171717)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-              Build On-Chain AI Agents
-            </h1>
-            <div className=" flex flex-row items-start justify-start box-border max-w-full text-xl">
-              <div className="flex-1 relative leading-[150%] inline-block max-w-full">
-                <span>{`Discover `}</span>
-                <b>Agentoor </b>
-                <span>
-                  the no-code framework for on-chain agent orchrestation. Build
-                  automatic funding workflows leveraging your favorite tools,
-                  LLMs, and your Web3 wallets.
-                </span>
-              </div>
-            </div>
-            <div className="w-full max-w-[38.375rem] mx-auto mt-[3rem]">
-              <iframe
-                src="https://embeds.beehiiv.com/44d80fc6-7f5d-4bac-8a72-af2a4e38b643?slim=true"
-                data-test-id="beehiiv-embed"
-                height="52"
-                frameBorder="0"
-                scrolling="no"
-                style={{
-                  margin: 0,
-                  backgroundColor: "transparent",
-                  width: "100%",
-                }}
-              />
-            </div>
-          </div>
-        </section>
+        <Waitlist />
 
-        <img
+        <motion.img
+          initial={{
+            opacity: 0,
+            transform: "translateY(10rem)",
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateY(0rem)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "linear",
+          }}
           className="w-[25.856rem] absolute bottom-[-9.962rem] left-[-16.312rem] rounded-[10.29px] max-h-full overflow-hidden shrink-0 object-contain z-10"
           loading="lazy"
-          alt=""
+          alt="bg"
           src="/types-of-wallet@2x.png"
         />
       </main>
@@ -106,7 +125,7 @@ const Page = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[999999]">
-          <div className="bg-white p-4 rounded-lg w-[95%] h-[95%] max-w-[95vw] max-h-[95vh] overflow-y-auto relative">
+          <div className="p-4 rounded-lg w-[95%] h-[95%] max-w-[95vw] max-h-[95vh] overflow-y-auto relative">
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-2 right-2 text-gray-700 hover:text-gray-900 text-2xl"
