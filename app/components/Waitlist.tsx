@@ -23,7 +23,7 @@ const Waitlist = () => {
         <div className=" flex flex-row items-start justify-start box-border max-w-full text-xl">
           <div className="flex-1 relative leading-[150%] inline-block max-w-full">
             <span>Discover</span>
-            <b>Agentoor </b>
+            <b>  Agentoor </b>
             <span>
               the no-code framework for on-chain agent orchrestation. Build
               automatic funding workflows leveraging your favorite tools, LLMs,
